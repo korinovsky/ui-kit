@@ -1,12 +1,11 @@
 {
-  "name": "@korinovsky/ui-kit-react",
-  "version": "0.0.2",
+  "name": "@korinovsky/ui-kit-vue",
+  "version": "0.0.1",
   "description": "> TODO: description",
   "author": "Konstantin Korinovskiy <konstantin.korinovskiy@domrf.ru>",
   "homepage": "",
   "license": "ISC",
   "main": "dist/index.js",
-  "module": "dist/index.js",
   "types": "dist/types/index.d.ts",
   "directories": {
     "lib": "lib",
@@ -16,7 +15,7 @@
     "dist"
   ],
   "scripts": {
-    "test": "node ./__tests__/react-library.test.js",
+    "test": "node ./__tests__/vue-library.test.js",
     "build": "npm run tsc",
     "tsc": "tsc -p . --outDir ./dist"
   },
@@ -24,7 +23,9 @@
     "access": "public"
   },
   "dependencies": {
-    "@stencil/react-output-target": "^0.7.1",
     "@korinovsky/ui-kit-core": "*"
+  },
+  "devDependencies": {
+    "vue": "^3.5.3"
   }
 }
